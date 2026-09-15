@@ -1,4 +1,6 @@
+/* Ordem importa: global define o reset e os tokens que os componentes consomem. */
 @import url(global.css);
+
 @import url(nav.css);
 @import url(header.css);
 @import url(main.css);

@@ -1,6 +1,6 @@
 header {
     padding-block: 32px;
-    font: var(--text-p-md);
+    font: var(--text-p-md);     /* tamanho padrão do bloco, herdado pelos filhos */
 }
 
 header .container {
@@ -9,14 +9,17 @@ header .container {
     align-items: center;
 }
 
+/* perfil: foto + bio
+   ========================================================================== */
+
 #profile {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-#profile > div {
-    max-width: 384px;
+#profile .bio {
+    max-width: 384px;           /* limita o comprimento da linha do texto */
 }
 
 #profile h1 {
@@ -24,6 +27,9 @@ header .container {
     color: var(--text-color-primary);
     margin-bottom: 8px;
 }
+
+/* estatísticas
+   ========================================================================== */
 
 #info {
     list-style: none;
@@ -36,5 +42,5 @@ header .container {
 #info li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 8px;                   /* entre o ícone e o texto */
 }

@@ -1,10 +1,19 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================================================================
+   Tokens
+   ========================================================================== */
+
 :root {
+    /* cores */
     --brand-color: #EF5F4C;
     --background-color: #FFFFFF;
     --surface-color: #F5F5F5;
@@ -12,6 +21,8 @@
     --shape-transparency: #ffffff8f;
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
+
+    /* tipografia */
     --font-family: "Poppins", sans-serif;
     --text: 16px/150% var(--font-family);
     --text-h: bold 32px/125% var(--font-family);
@@ -19,10 +30,19 @@
     --text-p-sm: 12px/170% var(--font-family);
 }
 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
 body {
     font: var(--text);
     color: var(--text-color-secondary);
     background-color: var(--background-color);
+}
+
+img {
+    display: block;     /* remove o vão que a linha de base do inline cria embaixo */
+    max-width: 100%;
 }
 
 a {
@@ -35,10 +55,14 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   Utilitárias
+   ========================================================================== */
+
 .container {
-    padding-inline: 32px;
     max-width: 1280px;
     margin-inline: auto;
+    padding-inline: 32px;
 }
 
 .bg-surface-color {
